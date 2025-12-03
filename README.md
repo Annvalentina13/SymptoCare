@@ -112,7 +112,29 @@ Buttons:
 📂 **Code Structure**
 ---------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   SymptoCare/  │  ├── data/  │   ├── Healthcare.csv  │   └── prediction_history.csv  │  ├── models/  │   └── disease_model.joblib  │  ├── reports/  │   ├── metrics.txt  │   └── eda_plots/  │       ├── disease_counts.png  │       ├── age_distribution.png  │       └── top_symptoms.png  │  ├── src/  │   ├── preprocessing.py  │   ├── train_model.py  │   ├── eda.py  │   └── gui.py  │  └── README.md   `
+SymptoCare/
+│
+├── data/
+│ ├── Healthcare.csv # Original healthcare dataset
+│ └── prediction_history.csv # Auto-generated prediction log
+│
+├── models/
+│ └── disease_model.joblib # Trained ML model pipeline
+│
+├── reports/
+│ ├── metrics.txt # Accuracy, classification report, confusion matrix
+│ └── eda_plots/
+│ ├── disease_counts.png # Patients per disease chart
+│ ├── age_distribution.png # Age histogram
+│ └── top_symptoms.png # Most frequent symptoms chart
+│
+├── src/
+│ ├── preprocessing.py # FullFeatureTransformer definition
+│ ├── train_model.py # Training pipeline script
+│ ├── eda.py # EDA visualization generator
+│ └── gui.py # Full Tkinter app (Login + Dashboard + Predict + Analytics + History)
+│
+└── README.md
 
 ⚙️ **Source Files Overview**
 ----------------------------
@@ -269,5 +291,6 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 📌 **Note**
 -----------
+
 
 This project is for **educational use only** and should not be used for real medical diagnosis.
